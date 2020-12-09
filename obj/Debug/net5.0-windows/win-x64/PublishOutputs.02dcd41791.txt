@@ -1,0 +1,2 @@
+C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\publish\PreCodeTextFormater.pdb
+C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\publish\PreCodeTextFormater.exe
