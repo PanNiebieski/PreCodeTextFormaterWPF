@@ -24,20 +24,21 @@ namespace PreCodeTextFormater
     {
         public MainWindow()
         {
+            Uri iconUri = new Uri("pack://application:,,,/Icon.ico", UriKind.RelativeOrAbsolute);
+
+            this.Icon = BitmapFrame.Create(iconUri);
+
             InitializeComponent();
+
+
 
             CodeTitle = new CodeTitleDataContextModel();
             CodeTitle.CodeTitle = "";
             this.DataContext = CodeTitle;
         }
 
-        private Mode applicationMode;
         private const int TAB_SIZE = 4;
-        public enum Mode
-        {
-            WLW,
-            StandAlone
-        };
+
 
         /// <summary>
         /// Public Code property used to return formatted code to Windows Live Writer or the Clipboard.
@@ -351,13 +352,25 @@ namespace PreCodeTextFormater
                 //Code = $"<pre><code class=\"hljs {SelectedCodeInText} \">\n\r{Code}\n\r</code></pre>"
                 ;
 
+                if (CheckBox_AddPreCode.IsChecked == false)
+                {
+                    Clipboard.SetText(Code);
+                    if (CheckBox_OpenNotepad.IsChecked == true)
+                        NotepadHelper.ShowMessage(Code);
+                    return;
+                }
+
                 if (CodeTitle.CodeTitle.Length > 1)
                     Code = $"<pre><code data-codetitle=\"{CodeTitle.CodeTitle}\" class=\"hljs {SelectedCodeInText} \">{Code}</code></pre>";
                 else
                     Code = $"<pre><code class=\"hljs {SelectedCodeInText} \">{Code}</code></pre>";
 
+                if (CheckBox_AddParagraf.IsChecked == true)
+                    Code = $"<p>{Code}</p><p>...</p>";
 
                 Clipboard.SetText(Code);
+                if (CheckBox_OpenNotepad.IsChecked == true)
+                    NotepadHelper.ShowMessage(Code);
 
             }
 

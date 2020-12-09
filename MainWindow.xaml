@@ -9,12 +9,13 @@
         ShowInTaskbar="True"
         Background="Transparent"
         MinHeight="550"
-        MinWidth="700"
+        MinWidth="800"
          ResizeMode="CanResizeWithGrip"
 WindowStyle="ToolWindow"
+         Icon="Icon.ico"
     Margin="0"
     Padding="0"
-        Height="550" Width="700" >
+        Height="550" Width="800" >
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -86,13 +87,13 @@ WindowStyle="ToolWindow"
                                 </LinearGradientBrush>
                             </StatusBar.Background>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_DeDent" Padding="1,4" Click="Button_DeDent_Click">&lt;&lt;</local:ToolBarButton>
+                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_DeDent" Padding="12,12,12,12"  Click="Button_DeDent_Click">&lt;&lt;</local:ToolBarButton>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_InDent" Padding="1,4" Click="Button_InDent_Click">&gt;&gt;</local:ToolBarButton>
+                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_InDent" Padding="12,12,12,12"  Click="Button_InDent_Click">&gt;&gt;</local:ToolBarButton>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_FixIndentation" Padding="10,4" Click="Button_FixIndentation_Click">Fix Indentation</local:ToolBarButton>
+                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_FixIndentation" Padding="12,12,12,12"  Click="Button_FixIndentation_Click">Fix Indentation</local:ToolBarButton>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
                                 <StackPanel Orientation="Horizontal">
@@ -101,11 +102,26 @@ WindowStyle="ToolWindow"
                                 </StackPanel>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <StackPanel Orientation="Horizontal">
-                                    <CheckBox IsChecked="True" x:Name="CheckBox_HtmlEncode" Margin="0,7,0,7" HorizontalAlignment="Left" Foreground="Gray">Html Encode</CheckBox>
-                                    <CheckBox x:Name="CheckBox_LineEndings" Margin="0,7,0,7" Visibility="Collapsed" HorizontalAlignment="Left" Foreground="Gray">Swap CRLFs with &lt;BR&gt;</CheckBox>
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                        <CheckBox IsChecked="True" x:Name="CheckBox_HtmlEncode" Margin="0,7,0,7" HorizontalAlignment="Left" Foreground="Gray">Html Encode</CheckBox>
+                                        <CheckBox IsChecked="True" x:Name="CheckBox_AddPreCode" Margin="7,7,0,7" HorizontalAlignment="Left" Foreground="Gray">Add Pre/Code</CheckBox>
 
-                                    <ComboBox    x:Name="ComboBox_Language" Width="140" Margin="7,3,0,4" Foreground="Black" HorizontalAlignment="Center"  SelectionChanged="ComboBox_SurroundWith_SelectionChanged">
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <CheckBox IsChecked="True" x:Name="CheckBox_OpenNotepad" Margin="0,7,0,7" HorizontalAlignment="Left" Foreground="Gray">OpenNotpad</CheckBox>
+                                        <CheckBox IsChecked="True" x:Name="CheckBox_AddParagraf" Margin="7,7,0,7" HorizontalAlignment="Left" Foreground="Gray">Add &lt;p&gt;</CheckBox>
+                                        <CheckBox x:Name="CheckBox_LineEndings" Margin="0,7,0,7" Visibility="Collapsed" HorizontalAlignment="Left" Foreground="Gray">Swap CRLFs with &lt;BR&gt;</CheckBox>
+
+
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </StatusBarItem>
+                            <StatusBarItem Margin="1,1" Padding="0">
+                                <StackPanel Orientation="Horizontal">
+
+                                    <ComboBox    x:Name="ComboBox_Language" Width="90" Margin="7,3,0,4" Foreground="Black" HorizontalAlignment="Center"  SelectionChanged="ComboBox_SurroundWith_SelectionChanged">
 
                                         <ComboBoxItem Name="None" Tag="" Content="None"></ComboBoxItem>
                                         <ComboBoxItem Name="CSharp" Tag="cs" Content="CSharp"  IsSelected="True"></ComboBoxItem>
@@ -128,13 +144,13 @@ WindowStyle="ToolWindow"
                                         <ComboBoxItem Name="Powershell" Tag="powershell" Content="Powershell"></ComboBoxItem>
                                         <ComboBoxItem Name="Http" Tag="http" Content="Http"></ComboBoxItem>
                                         <ComboBoxItem Name="COBOL" Tag="cobol" Content="COBOL"></ComboBoxItem>
-                                        <ComboBoxItem Name="COMMANDLINEINTERFACE" Tag="cmd" Content="COMMAND LINE INTERFACE"></ComboBoxItem>
+                                        <ComboBoxItem Name="COMMANDLINEINTERFACE" Tag="cmd" Content="CMD"></ComboBoxItem>
                                         <ComboBoxItem Name="CPlusPlus" Tag="cpp" Content="CPlusPlus"></ComboBoxItem>
                                         <ComboBoxItem Name="Python" Tag="python" Content="Python"></ComboBoxItem>
                                         <ComboBoxItem Name="LessCSS" Tag="less" Content="Less CSS"></ComboBoxItem>
                                         <ComboBoxItem Name="Scss" Tag="scss" Content="Scsc"></ComboBoxItem>
                                     </ComboBox>
-                                    <TextBox  Foreground="Yellow" Margin="7,3,0,4" Width="145"  x:Name="TXT_CodeTitle"   Text="{Binding CodeTitle, Mode=OneWay}"  />
+                                    <TextBox  Foreground="Black" Margin="7,3,0,4" Width="100"  x:Name="TXT_CodeTitle"   Text="{Binding CodeTitle, Mode=TwoWay}"  />
                                 </StackPanel>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
@@ -145,7 +161,14 @@ WindowStyle="ToolWindow"
                                 </StackPanel>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton BorderBrush="Yellow" Padding="1,1,1,1" Background="Black" Margin="0,0,0,0" Foreground="Yellow" x:Name="Button_Ok"  Click="Button_Ok_Click">Get Code ClipBoard</local:ToolBarButton>
+                                <local:ToolBarButton BorderBrush="#C6FA46" Padding="12,12,12,12" Background="Black" Margin="0,0,0,0" Foreground="#C6FA46" x:Name="Button_Ok"  Click="Button_Ok_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Get Code to ClipArt" Padding="0,0,7,0" />
+                                        <Image Source="icon48.png" Height="16" Width="16"  />
+                                    </StackPanel>
+
+
+                                </local:ToolBarButton>
                             </StatusBarItem>
                         </StatusBar>
                     </Border>
