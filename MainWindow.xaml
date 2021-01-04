@@ -17,13 +17,7 @@ WindowStyle="ToolWindow"
     Padding="0"
         Height="550" Width="800" >
     <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Themes/Black.xaml" />
-                <!--<ResourceDictionary Source="Styles/ComboxStyle.xaml"/>
-                <ResourceDictionary Source="Styles/TextBoxBase.xaml"/>-->
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+
     </Window.Resources>
 
     <Grid>
@@ -40,34 +34,6 @@ WindowStyle="ToolWindow"
                         <RowDefinition Height="*" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <!--<Border Margin="0" Padding="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Height="25"  BorderBrush="#FF333333" BorderThickness="0">
-                        <Border.Background>
-                            <RadialGradientBrush Center="0.5,0.2" GradientOrigin="0.5,-0.2" RadiusX="0.5" RadiusY="0.5">
-                                <GradientStop Color="#FFFFFFFF"  Offset="0"/>
-                                <GradientStop Color="#55111111" Offset="1"/>
-                            </RadialGradientBrush>
-                        </Border.Background>
-                        <StatusBar x:Name="TitleBar" Padding="0" Margin="0" BorderBrush="#FF999999" BorderThickness="0">
-                            <StatusBar.Background>
-                                <LinearGradientBrush StartPoint="0.486,0" EndPoint="0.486,0.986">
-                                    <GradientStop Color="#33666666" Offset="0"/>
-                                    <GradientStop Color="#77666666" Offset="0.4"/>
-                                    <GradientStop Color="#77666666" Offset="0.5"/>
-                                    <GradientStop Color="#22666666" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StatusBar.Background>
-                            <StatusBarItem Margin="2,0" Padding="0">
-                                <local:IconControl />
-                            </StatusBarItem>
-                            <StatusBarItem Margin="5,0,0,0" Padding="0">
-                                <TextBlock>PreCode TextFormater</TextBlock>
-                            </StatusBarItem>
-                            <StatusBarItem HorizontalAlignment="Right" Margin="0,2,5,2" Padding="0">
-                                <local:CloseButton IsCancel="True"  IsDefault="True" />
-                            </StatusBarItem>
-                        </StatusBar>
-                    </Border>-->
-
 
                     <!--Toolbar -->
                     <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="1,0,-2,0" BorderBrush="#666" CornerRadius="1" BorderThickness="1">
@@ -87,13 +53,13 @@ WindowStyle="ToolWindow"
                                 </LinearGradientBrush>
                             </StatusBar.Background>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_DeDent" Padding="12,12,12,12"  Click="Button_DeDent_Click">&lt;&lt;</local:ToolBarButton>
+                                <Button Background="Gray" Foreground="White" x:Name="Button_DeDent" Padding="12,12,12,12"  Click="Button_DeDent_Click">&lt;&lt;</Button>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_InDent" Padding="12,12,12,12"  Click="Button_InDent_Click">&gt;&gt;</local:ToolBarButton>
+                                <Button Background="Gray" Foreground="White" x:Name="Button_InDent" Padding="12,12,12,12"  Click="Button_InDent_Click">&gt;&gt;</Button>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton Background="Gray" Foreground="White" x:Name="Button_FixIndentation" Padding="12,12,12,12"  Click="Button_FixIndentation_Click">Fix Indentation</local:ToolBarButton>
+                                <Button Background="Gray" Foreground="White" x:Name="Button_FixIndentation" Padding="12,12,12,12"  Click="Button_FixIndentation_Click">Fix Indentation</Button>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
                                 <StackPanel Orientation="Horizontal">
@@ -161,14 +127,12 @@ WindowStyle="ToolWindow"
                                 </StackPanel>
                             </StatusBarItem>
                             <StatusBarItem Margin="1,1" Padding="0">
-                                <local:ToolBarButton BorderBrush="#C6FA46" Padding="12,12,12,12" Background="Black" Margin="0,0,0,0" Foreground="#C6FA46" x:Name="Button_Ok"  Click="Button_Ok_Click">
+                                <Button BorderBrush="#C6FA46" Padding="12,12,12,12" Background="Black" Margin="0,0,0,0" Foreground="#C6FA46" x:Name="Button_Ok"  Click="Button_Ok_Click">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="Get Code to ClipArt" Padding="0,0,7,0" />
                                         <Image Source="icon48.png" Height="16" Width="16"  />
                                     </StackPanel>
-
-
-                                </local:ToolBarButton>
+                                </Button>
                             </StatusBarItem>
                         </StatusBar>
                     </Border>

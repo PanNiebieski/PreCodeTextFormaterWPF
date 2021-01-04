@@ -22,6 +22,10 @@ namespace PreCodeTextFormater
     /// </summary>
     public partial class MainWindow : Window
     {
+        private const int TAB_SIZE = 4;
+        public string SelectedCodeInText { get; set; }
+        public CodeTitleDataContextModel CodeTitle { get; set; }
+
         public MainWindow()
         {
             Uri iconUri = new Uri("pack://application:,,,/Icon.ico", UriKind.RelativeOrAbsolute);
@@ -30,26 +34,20 @@ namespace PreCodeTextFormater
 
             InitializeComponent();
 
-
-
             CodeTitle = new CodeTitleDataContextModel();
             CodeTitle.CodeTitle = "";
             this.DataContext = CodeTitle;
         }
 
-        private const int TAB_SIZE = 4;
+
 
 
         /// <summary>
         /// Public Code property used to return formatted code to Windows Live Writer or the Clipboard.
         /// </summary>
+
+
         public string Code { get; set; }
-
-        public string SelectedCodeInText { get; set; }
-
-        public CodeTitleDataContextModel CodeTitle { get; set; }
-
-
 
         private void Button_DeDent_Click(object sender, RoutedEventArgs e)
         {

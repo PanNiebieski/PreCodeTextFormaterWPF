@@ -17,11 +17,4 @@
     <Resource Include="icon48.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Page Update="Themes\Red.xaml">
-      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-
 </Project>

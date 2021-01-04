@@ -7,27 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Controls\IconControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Controls\IconControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\ComboxStyle.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\TextBoxBase.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Themes\Red.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Themes\Black.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
