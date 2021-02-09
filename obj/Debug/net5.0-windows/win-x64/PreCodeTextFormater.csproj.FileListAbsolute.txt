@@ -217,7 +217,6 @@ C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\D
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\hostfxr.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\hostpolicy.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\mscordaccore.dll
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\mscordaccore_amd64_amd64_5.0.20.51904.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\mscordbi.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\mscorrc.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\ucrtbase.dll
@@ -501,17 +500,10 @@ C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\D
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\vcruntime140_cor3.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\wpfgfx_cor3.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater.csprojAssemblyReference.cache
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Styles\ComboxStyle.baml
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Styles\TextBoxBase.baml
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Themes\Black.baml
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Themes\Red.baml
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Controls\IconControl.g.cs
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\MainWindow.g.cs
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\App.g.cs
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater_MarkupCompile.cache
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater_MarkupCompile.lref
-C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\Controls\IconControl.baml
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\MainWindow.baml
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater.g.resources
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater.GeneratedMSBuildEditorConfig.editorconfig
@@ -523,3 +515,4 @@ C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\D
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\ref\PreCodeTextFormater.dll
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater.pdb
 C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\obj\Debug\net5.0-windows\win-x64\PreCodeTextFormater.genruntimeconfig.cache
+C:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\bin\Debug\net5.0-windows\win-x64\mscordaccore_amd64_amd64_5.0.220.61120.dll

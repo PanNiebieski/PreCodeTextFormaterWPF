@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 c:\Users\PanNiebieski\source\repos\PreCodeTextFormater\PreCodeTextFormater\App.xaml
-6-219271151
+1219584333
 
-101905491743
+71168891315
 1931182725112
-Controls\IconControl.xaml;MainWindow.xaml;Styles\ComboxStyle.xaml;Styles\TextBoxBase.xaml;Themes\Black.xaml;Themes\Red.xaml;
+MainWindow.xaml;
 
 True
 

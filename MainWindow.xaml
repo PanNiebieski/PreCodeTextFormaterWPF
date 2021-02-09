@@ -97,24 +97,28 @@ WindowStyle="ToolWindow"
                                         <ComboBoxItem Name="CSS" Tag="css"  Content="CSS"></ComboBoxItem>
                                         <ComboBoxItem Name="Java" Tag="java"  Content="Java"></ComboBoxItem>
                                         <ComboBoxItem Name="Angular" Tag="angular js"  Content="Angular"></ComboBoxItem>
-                                        <ComboBoxItem Name="Typescript" Tag="typescript js" Content="Typescript"></ComboBoxItem>
-                                        <ComboBoxItem Name="Xaml" Tag="xaml xml" Content="Xaml"></ComboBoxItem>
-                                        <ComboBoxItem Name="Xml" Tag="xml" Content="Xml"></ComboBoxItem>
+                                        <ComboBoxItem Name="Typescript" Tag="typescript js" Content="TypeScript"></ComboBoxItem>
+                                        <ComboBoxItem Name="Xaml" Tag="xaml xml" Content="XAML"></ComboBoxItem>
+                                        <ComboBoxItem Name="Xml" Tag="xml" Content="XML"></ComboBoxItem>
+                                        <ComboBoxItem Name="Yaml" Tag="yaml" Content="YAML"></ComboBoxItem>
+
                                         <ComboBoxItem Name="objectivec" Tag="objectivec"  Content="Objectivec"></ComboBoxItem>
                                         <ComboBoxItem Name="Razor" Tag="razor"  Content="Razor"></ComboBoxItem>
                                         <ComboBoxItem Name="Json"  Tag="json"  Content="JSON"></ComboBoxItem>
                                         <ComboBoxItem Name="T4"   Tag="t4 cs" Content="T4"></ComboBoxItem>
+                                        <ComboBoxItem Name="AHKScript" Tag="ahk" Content="AHK Script"></ComboBoxItem>
                                         <ComboBoxItem Name="NPM" Tag="npm" Content="NPM"></ComboBoxItem>
-                                        <ComboBoxItem Name="Fsharp" Tag="fs" Content="Fsharp"></ComboBoxItem>
+                                        <ComboBoxItem Name="Fsharp" Tag="fs" Content="FSharp"></ComboBoxItem>
                                         <ComboBoxItem Name="CiJava" Tag="csjava"  Content="C# i Java"></ComboBoxItem>
                                         <ComboBoxItem Name="Powershell" Tag="powershell" Content="Powershell"></ComboBoxItem>
-                                        <ComboBoxItem Name="Http" Tag="http" Content="Http"></ComboBoxItem>
+                                        <ComboBoxItem Name="Http" Tag="http" Content="HTTP"></ComboBoxItem>
                                         <ComboBoxItem Name="COBOL" Tag="cobol" Content="COBOL"></ComboBoxItem>
                                         <ComboBoxItem Name="COMMANDLINEINTERFACE" Tag="cmd" Content="CMD"></ComboBoxItem>
+                                        <ComboBoxItem Name="INI" Tag="ini" Content="Config .ini"></ComboBoxItem>
                                         <ComboBoxItem Name="CPlusPlus" Tag="cpp" Content="CPlusPlus"></ComboBoxItem>
                                         <ComboBoxItem Name="Python" Tag="python" Content="Python"></ComboBoxItem>
                                         <ComboBoxItem Name="LessCSS" Tag="less" Content="Less CSS"></ComboBoxItem>
-                                        <ComboBoxItem Name="Scss" Tag="scss" Content="Scsc"></ComboBoxItem>
+                                        <ComboBoxItem Name="Scss" Tag="scss" Content="SCSS"></ComboBoxItem>
                                     </ComboBox>
                                     <TextBox  Foreground="Black" Margin="7,3,0,4" Width="100"  x:Name="TXT_CodeTitle"   Text="{Binding CodeTitle, Mode=TwoWay}"  />
                                 </StackPanel>

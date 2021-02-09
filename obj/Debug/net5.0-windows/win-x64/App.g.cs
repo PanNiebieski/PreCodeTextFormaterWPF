@@ -44,7 +44,7 @@ namespace PreCodeTextFormater {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.2.0")]
         public void InitializeComponent() {
             
             #line 5 "..\..\..\..\App.xaml"
@@ -59,7 +59,7 @@ namespace PreCodeTextFormater {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.2.0")]
         public static void Main() {
             PreCodeTextFormater.App app = new PreCodeTextFormater.App();
             app.InitializeComponent();
