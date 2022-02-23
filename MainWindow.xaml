@@ -119,6 +119,7 @@ WindowStyle="ToolWindow"
                                         <ComboBoxItem Name="Python" Tag="python" Content="Python"></ComboBoxItem>
                                         <ComboBoxItem Name="LessCSS" Tag="less" Content="Less CSS"></ComboBoxItem>
                                         <ComboBoxItem Name="Scss" Tag="scss" Content="SCSS"></ComboBoxItem>
+										<ComboBoxItem Name="Vba" Tag="vbnet" Content="Visual Basic"></ComboBoxItem>
                                     </ComboBox>
                                     <TextBox  Foreground="Black" Margin="7,3,0,4" Width="100"  x:Name="TXT_CodeTitle"   Text="{Binding CodeTitle, Mode=TwoWay}"  />
                                 </StackPanel>
